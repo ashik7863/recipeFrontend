@@ -36,7 +36,7 @@ const Login = () => {
       const { userid, password } = val;
       setIsLoading(true);
       const { data } = await axios.post(
-        "http://localhost:3001/login",
+        "https://recipe-backend-dnyk.vercel.app/login",
         {
           userid,
           password,

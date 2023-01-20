@@ -4,7 +4,7 @@ import {Link,useNavigate}from 'react-router-dom';
 const Products = () => {
   const [recipe, setRecipe] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3001/recipe").then((result) => {
+    fetch("https://recipe-backend-dnyk.vercel.app/recipe").then((result) => {
       result.json().then((resp) => {
         setRecipe(resp);
       });

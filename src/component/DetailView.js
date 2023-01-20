@@ -9,22 +9,22 @@ const DetailView = () => {
   const {id,cid}=useParams();
   
   useEffect(()=>{
-    fetch(`http://localhost:3001/recipe/${id}`).then((resp)=>{
+    fetch(`https://recipe-backend-dnyk.vercel.app/recipe/${id}`).then((resp)=>{
       resp.json().then((result)=>{
         setRecipe(result);
       })
     })
-    fetch(`http://localhost:3001/creator/${cid}`).then((resp)=>{
+    fetch(`https://recipe-backend-dnyk.vercel.app/creator/${cid}`).then((resp)=>{
       resp.json().then((result)=>{
         setCreater(result);
       })
     })
-    fetch(`http://localhost:3001/ingredient/${id}`).then((resp)=>{
+    fetch(`https://recipe-backend-dnyk.vercel.app/ingredient/${id}`).then((resp)=>{
       resp.json().then((result)=>{
         setIngredients(result);
       })
     })
-    fetch(`http://localhost:3001/process/${id}`).then((resp)=>{
+    fetch(`https://recipe-backend-dnyk.vercel.app/process/${id}`).then((resp)=>{
       resp.json().then((result)=>{
         setProcess(result);
       })

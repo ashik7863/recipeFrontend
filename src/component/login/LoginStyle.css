@@ -57,3 +57,7 @@ form span a{
     color:#4e0eff;
     text-decoration:none;
 }
+.brand img{
+    position: absolute;
+    width: 250px;
+}
